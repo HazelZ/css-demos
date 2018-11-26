@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>音符一样跳动，可用于导航，菜单</title>
+  <style>
+    *{margin:0;padding:0;}
+    ul{
+      width:800px;
+      margin:100px auto;
+      background:#000;
+    }
+  li{
+    margin:0 10px;
+    list-style:none;
+    color:#fff;
+    font-size:36px;
+    user-select:none;
+    text-shadow:2px 2px 5px #f00;
+    transition:all 1s;
+  }
+  li:hover{
+    letter-spacing:100px;
+    text-shadow:0 0 25px #0f0,0 0 10px #fff,0 0 15px #fff,0 0 20px #ff9900,0 0 35px #ff9900,0 0 40px #ff9900,0 0 50px #ff9900,0 0 75px #ff9900;
+  }
+  li .line{
+    margin:10px 0;
+    width:0;
+    height:2px;
+    background: #fff;
+    border-radius:1px;
+    transition:all 1s;
+  }
+  li:hover .line{
+    width:100%;
+  }
+  </style>
+</head>
+<body>
+  <ul>
+    <li>Hello<div class="line"></div></li>
+    <li>World<div class="line"></div></li>
+    <li>Hello<div class="line"></div></li>
+    <li>World<div class="line"></div></li>
+    <li>Hello<div class="line"></div></li>
+    <li>World<div class="line"></div></li>
+  </ul>
+</body>
+</html>
